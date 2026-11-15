@@ -1,0 +1,87 @@
+general:
+  ban-command: "ban {player} {reason}"
+  ban-reason: "{prefix} &8» &b{check}"
+  prefix: "&#9FD0F8N&#A2D0F8a&#A4D1F7v&#A7D1F7e&#AAD2F6l&#ACD2F6y&#AFD2F5a&#B1D3F5A&#B4D3F4C"
+  alert-format: "{prefix} &8» &f{player} &7failed &b{check} &8(&7{info}&8) &8[&f{logs}&8/&f{max}&8]"
+  ban-broadcast: "{prefix} &8» &f{player} &7banlandi &8» &b{check}"
+  log-decay-seconds: 900
+  target-range: 60.0
+  combat-seconds: 120
+
+checks:
+  ElytraTargetA:
+    enabled: true
+    logs-to-ban: 3
+    snap-min-rotation: 35.0
+    snap-before-error: 20.0
+    snap-after-error: 1.0
+    snaps-needed: 3
+    lock-error: 0.8
+    lock-ticks: 12
+    gcd-check: true
+    gcd-buffer: 15
+  ElytraTargetB:
+    enabled: true
+    logs-to-ban: 3
+    window-ms: 1000
+    degrees: 360.0
+    target-range: 40.0
+  ElytraTargetC:
+    enabled: true
+    logs-to-ban: 3
+    max-ping: 400
+    min-target-speed: 0.6
+    lead-min: 3.0
+    pred-error: 1.0
+    pred-ticks: 12
+    overshoot-ahead: 3.0
+    overshoot-error: 1.0
+    overshoot-ticks: 14
+  ElytraTargetD:
+    enabled: true
+    logs-to-ban: 3
+    min-delta: 2.5
+    max-delta: 40.0
+    max-aim-error: 15.0
+    flips-needed: 10
+  ElytraTargetE:
+    enabled: true
+    logs-to-ban: 3
+    max-error: 1.0
+    min-distance: 4.0
+    streak-needed: 3
+    streak-window-ms: 10000
+  ElytraTargetF:
+    enabled: true
+    logs-to-ban: 3
+    max-ping: 400
+    max-gap-ms: 150
+    spike-min: 90.0
+    calm-max: 5.0
+    stop-max: 3.0
+    aim-max: 30.0
+    flicks-needed: 3
+    window-ms: 15000
+  ElytraTargetG:
+    enabled: true
+    logs-to-ban: 3
+    chase-seconds: 10.0
+    max-move-angle: 4.0
+    max-aim-angle: 3.0
+    min-target-turn: 180.0
+    max-distance: 40.0
+  ElytraTargetK:
+    enabled: true
+    logs-to-ban: 3
+    min-delay-ms: 150
+    streak-needed: 3
+    swap-ms: 60
+    swaps-needed: 2
+    swap-window-ms: 10000
+    flag-offhand-with-sword: false
+  ElytraTargetZ:
+    enabled: true
+    logs-to-ban: 3
+    min-delta: 2.0
+    constant-needed: 5
+    rounded-needed: 6

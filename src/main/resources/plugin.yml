@@ -1,0 +1,17 @@
+name: NavelyaAC
+version: 1.0.0
+main: me.navelya.ac.NavelyaAC
+api-version: "1.21"
+description: Anti ElytraTarget / KillAura
+commands:
+  navelyaac:
+    description: NavelyaAC komutu
+    aliases: [nac]
+    permission: navelyaac.admin
+permissions:
+  navelyaac.admin:
+    default: op
+  navelyaac.alerts:
+    default: op
+  navelyaac.bypass:
+    default: false
